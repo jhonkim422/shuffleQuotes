@@ -13,7 +13,37 @@ background: #b09e99;
 }
 </style>
 
-<script href="https://raw.githubusercontent.com/JS-Beginners/random-quotes-project/main/js/app.js"></script>
+<script>
+(function(){
+const quotes = [
+{ 
+ quote:
+ "ndjdiskskdjdjdidisis",
+ author: "sbjwisis"
+},
+{
+ quote:
+ "bxidoaoaosisososisododofkcncn",
+ author: "6773767"
+},
+{
+ quote:
+ "ncncnxnxnxmxcmcmcmcmcmcmcmcmmcmckd",
+ author: "uwiwiqieiwi"
+}
+];
+
+const btn = document.getElementById("generate-btn");
+
+ btn.addEventListener('click', function(){
+  let random = Math.floor(Math.random() * quotes.length);
+  console.log(random);
+
+  document.getElementById("quote").textContent = quotes[random].quote;
+  document..querySelector(".author").textContent = quotes[random].author;
+ });
+})();
+</script>
 </head>
 
 
