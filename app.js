@@ -39,6 +39,6 @@
     console.log(random);
 
     document.getElementById("quote").textContent = quotes[random].quote;
-    document.querySelector(".author").textContent = quotes[random].author;
+    document.querySelector("author").textContent = quotes[random].author;
   });
 })();
